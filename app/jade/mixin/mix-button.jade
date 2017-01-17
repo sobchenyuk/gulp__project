@@ -1,0 +1,6 @@
+mixin botton(id,selector,number,text)
+	button(type="button", id=id, class=(selector)+" number"+number ) 
+		span=(text)
+mixin btn(selector,classText,text)
+	button(type="button", class=(selector)) 
+		span(class=(classText))=(text)

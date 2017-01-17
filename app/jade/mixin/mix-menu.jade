@@ -1,0 +1,8 @@
+mixin menu(id1,id2,id3, ...items)
+    ul(class=id1)
+        each item, index in items
+            li(class=id2)
+                a(class=id3 href="#"+'block-'+index)=item
+mixin menuTwo(id1, ...items)
+    each item, index in items
+        a(class=id1 href="#"+'block-'+index)=item

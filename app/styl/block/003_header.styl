@@ -1,0 +1,106 @@
+/*
+ * header
+ */
+
+body
+	font-family: Arial,Helvetica,sans-serif;
+	background #e9e9e9
+.header__box__group
+	float: right;
+.header__box__logo,
+.phone
+	font-size: 17.426px;
+	color: rgb(0, 0, 0);
+	line-height: 0.781;
+	text-align: center;
+	-moz-transform: matrix( 1.37724438307918,0,0,1.37724438307918,0,0);
+	-webkit-transform: matrix( 1.37724438307918,0,0,1.37724438307918,0,0);
+	-ms-transform: matrix( 1.37724438307918,0,0,1.37724438307918,0,0);
+	text-decoration: none;
+.mouse
+	position relative
+	animation: mouse  0.5s infinite ease-in-out;
+@keyframes mouse {
+0%{top: 0}
+20%{top: 5px}
+}
+.botton
+	border-width: 2px;
+	border-color: rgb(222, 30, 17);
+	border-style: solid;
+	border-radius: 3px;
+	width: 190px;
+	height: 33px;
+	cursor: pointer;
+	transition: 0.3s linear;
+	background: none;
+	span
+		font-size: 13px;
+		color: rgb(222, 30, 17);
+		line-height: 1.041;
+		text-align: center;
+		transition: 0.3s linear;
+	&.red
+		border-radius: 3px;
+		background-color: rgb(222, 30, 17);
+		width: 323px;
+		height: 56px;
+		span
+			font-size: 20px;
+			color: rgb(255, 255, 255);
+			line-height: 0.681;
+		&.white__hover
+			&:hover
+				background: #fff;
+				span
+					color: #de1e11;
+
+.red__hover
+	&:hover
+		background: #de1e11;
+		span
+			color: #fff;
+.header
+	padding-top: 2em;
+	padding-bottom: 7em;
+	background: url(../img/fon-1.png);
+	background-repeat: no-repeat;
+	background-size: 154em 90em;
+	background-position: -23em -47em;
+.header__descript
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 2em;
+.header__descript__box
+	text-align: center;
+	border-right: 2px solid #de1e11;
+	border-left: 2px solid #de1e11;
+	border-top: 2px solid #de1e11;
+	width: 750px;
+	height: 195px;
+.header__descript__box__text
+	margin-top: 0.5em;
+	font-size: 46px;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	line-height: 1.218;
+.header__descript__box__context
+	font-size 43px
+	color #000
+	line-height 1.218
+	margin-left auto
+	margin-right auto
+	position relative
+	top: -4px
+.header__box__botton
+	margin-top: 5em;
+	margin-bottom: 2em;
+.header__descript__box__content
+	margin-top: -9px;
+	display: flex;
+.header__descript__content
+	padding: 0;
+	height: 2px;
+	background-color: #de1e11;
+	margin: auto;

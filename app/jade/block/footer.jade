@@ -1,0 +1,45 @@
+footer
+	include block_08
+	#block-6.block__footer
+		.container.block__footer_box
+			.block__descript.block__footer_descript
+				h3.block__descript__title 
+					span.block__descript__title__top.block_06_top  Как с нами связаться
+					span.block__descript__title__botton КОНТАКТЫ
+		.container
+			.lg-4.footer__contacts
+				p.contacts__block Телефон
+					a.contacts__link(href="tel:#{phone.phone}") #{phone.phone}
+				p.contacts__block 
+					span.contacts__block_text E-mail
+					a.contacts__link(href="mailto:#{phone.mail}") #{phone.mail}
+			.lg-8.footer__form
+				p.footer__form_title
+				.row
+					form(role="form" name="form"  method="post"  action="#").block__form.form
+						.lg-4
+							label(for="name")
+							input#name(type="text" name="name" placeholder="Имя")
+						.lg-4
+							label(for="phone")
+							input#phone(type="text" name="phone" placeholder="Телефон")
+						.lg-4
+							button.botton.red__hover.descript__botton(type="submit") 
+								span.item__botton_textColor отправить
+		.container
+			.block__footer_bottom
+
+
+
+// Сaмo oкнo
+#modal_form(style="display:none;")
+	// Кнoпкa зaкрыть
+
+	#modal_close
+		span X
+	.container__modal
+		h3 Оставить заявку
+
+
+#overlay
+// Пoдлoжкa

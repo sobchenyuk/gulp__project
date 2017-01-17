@@ -1,0 +1,27 @@
+header.header
+	hgroup.header__group
+		.container
+			.row.header__box
+				.lg-2.header__box__logo Business-art
+				.lg-5.header__box__group
+					.row.header__box__group__descript
+						.lg-5.header__box__group__phone
+							a.phone(href="tel:#{phone.phone}") #{phone.phone}
+						.lg-6.header__box__group__botton
+							+botton('btn-1','botton red__hover','1','заказать звонок')
+			.row.header__descript
+				.lg-8.header__descript__box
+					h1.header__descript__box__text Создаем профессиональные
+						br 
+						| LANDING PAGE
+					.row.header__descript__box__content
+						.lg-1.header__descript__content
+						.lg-10
+							h2.header__descript__box__context с повышенной конверсией
+						.lg-1.header__descript__content
+
+
+				.header__box__botton
+					+botton('btn-2','botton red white__hover','2','ПОЛУЧИТЬ ПРОТОТИП')
+
+				i.my__fonts.mouse.scrollto
